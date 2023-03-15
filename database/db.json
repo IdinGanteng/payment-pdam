@@ -1,0 +1,28 @@
+{
+  "user": [
+    {
+      "name": "asd",
+      "username": "idin",
+      "email": "maukif99@gmail.com",
+      "phone": "0856123456",
+      "bio": "asdasdasd",
+      "id": 7
+    },
+    {
+      "name": "asd",
+      "username": "idin",
+      "email": "maukif99@gmail.com",
+      "phone": "0856123456",
+      "bio": "asdasdasd",
+      "id": 8
+    },
+    {
+      "name": "asd",
+      "username": "matojakal",
+      "email": "maukif99@gmail.com",
+      "phone": "085848940211",
+      "bio": "dgfgd",
+      "id": 9
+    }
+  ]
+}
