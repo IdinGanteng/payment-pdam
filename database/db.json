@@ -1,28 +1,31 @@
 {
   "user": [
     {
-      "name": "asd",
-      "username": "idin",
-      "email": "maukif99@gmail.com",
-      "phone": "0856123456",
-      "bio": "asdasdasd",
-      "id": 7
-    },
-    {
-      "name": "asd",
-      "username": "idin",
-      "email": "maukif99@gmail.com",
-      "phone": "0856123456",
-      "bio": "asdasdasd",
-      "id": 8
-    },
-    {
-      "name": "asd",
-      "username": "matojakal",
-      "email": "maukif99@gmail.com",
+      "nama": "idin",
+      "alamat": "rt 2 rw 7 ",
+      "totalAirPerM3": "300",
+      "totalPembayaran": "45.000",
       "phone": "085848940211",
-      "bio": "dgfgd",
-      "id": 9
+      "catatan": "hskjhaksd",
+      "id": 1
+    },
+    {
+      "nama": "idin",
+      "alamat": "rt 2 rw 7 ",
+      "totalAirPerM3": "300",
+      "totalPembayaran": "45.000",
+      "phone": "085848940211",
+      "catatan": "ffhgfhgfhgf",
+      "id": 2
+    },
+    {
+      "nama": "idin",
+      "alamat": "rt 2 rw 7 ",
+      "totalAirPerM3": "300",
+      "totalPembayaran": "45.000",
+      "phone": "085848940211",
+      "catatan": "lunas",
+      "id": 3
     }
   ]
 }

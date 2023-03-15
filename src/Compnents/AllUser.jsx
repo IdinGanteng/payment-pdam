@@ -63,10 +63,10 @@ const AllUsers = () => {
             <TableHead>
                 <TableRow className={classes.thead}>
                     <TableCell>ID</TableCell>
-                    <TableCell>Name</TableCell>
-                    <TableCell>UserName</TableCell>
-                    <TableCell>Email</TableCell>
-                    <TableCell>Phone</TableCell>
+                    <TableCell>Nama</TableCell>
+                    <TableCell>Alamat</TableCell>
+                    <TableCell>Total Penggunaan</TableCell>
+                    <TableCell>Total Pembayaran</TableCell>
                     <TableCell></TableCell>
                 </TableRow>
             </TableHead>
@@ -75,10 +75,10 @@ const AllUsers = () => {
                 user.map((data) => (
                     <TableRow className={classes.trow}>
                         <TableCell>{data.id}</TableCell>
-                        <TableCell>{data.name}</TableCell>
-                        <TableCell>{data.username}</TableCell>
-                        <TableCell>{data.email}</TableCell>
-                        <TableCell>{data.phone}</TableCell>
+                        <TableCell>{data.nama}</TableCell>
+                        <TableCell>{data.alamat}</TableCell>
+                        <TableCell>{data.totalAirPerM3}</TableCell>
+                        <TableCell>{data.totalPembayaran}</TableCell>
                         <TableCell>
                             <Button variant="contained" color="primary" style={{margin: '0px 20px'}} component={Link} to={`/edit/${data.id}`}>Edit</Button>
                             <Button variant="contained" color="secondary" style={{margin: '0px 20px'}} onClick={() => deleteData(data.id)}>Delete</Button>

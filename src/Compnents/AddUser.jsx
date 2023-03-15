@@ -6,18 +6,19 @@ import { useHistory, useNavigate } from 'react-router-dom';
 
 
 const initialValue = {
-  name: "",
-  username: "",
-  email: "",
+  nama: "",
+  alamat: "",
+  totalAirPerM3: "",
+  totalPembayaran:"",
   phone: "",
-  bio:"",
+  catatan:"",
 }
 const { TextArea } = Input;
 
 const AddUser = () => {
     
   const [user, setUser] = useState(initialValue);
-  const { name, username, email, phone, bio} = user;
+  const { nama, alamat, totalAirPerM3,totalPembayaran, phone, catatan} = user;
 
   // const history = useHistory();
   const navigate = useNavigate();
@@ -25,10 +26,10 @@ const AddUser = () => {
     setUser({ ...user, [e.target.name]: e.target.value });
   }
 
-  const noWA={phone}
-  const pesan="anda sudah bayar.";
+  // const noWA={phone}
+  const pesan= `atas nama ${nama} telah membayar total air ${totalAirPerM3}m3 dengan harga ${totalPembayaran} dibayar secara ${catatan}`;
   const pesanWA = () => {
-    const url=`https://wa.me/${noWA}?text=${encodeURIComponent(pesan)}`;
+    const url=`https://wa.me/${phone}?text=${encodeURIComponent(pesan)}`;
     window.open(url);
   }
   const pesanWAotomatis = () => {
@@ -53,34 +54,40 @@ const AddUser = () => {
           span: 16,
         }}
         style={{
-          maxWidth: 600,
-          margin: "150px 300px"
+          width:200,
+          marginLeft:"auto",
+          marginRight:"auto"
         }}
       >
         <Form.Item
-          label="name"
+          label="Nama"
         >
-          <Input onChange={onValueChange} name="name" value={name} />
+          <Input onChange={onValueChange} name="nama" value={nama} />
         </Form.Item>
         <Form.Item
-          label="username"
+          label="Alamat"
         >
-          <Input onChange={onValueChange} name="username" value={username} />
+          <Input onChange={onValueChange} name="alamat" value={alamat} />
         </Form.Item>
         <Form.Item
-          label="email"
+          label="Total Penggunaan Air/m3"
         >
-          <Input onChange={onValueChange} name="email" value={email} />
+          <Input onChange={onValueChange} name="totalAirPerM3" value={totalAirPerM3} />
         </Form.Item>
         <Form.Item
-          label="phone"
+          label="Total Pembayaran"
+        >
+          <Input onChange={onValueChange} name="totalPembayaran" value={totalPembayaran}  />
+        </Form.Item>
+        <Form.Item
+          label="Telepon Pelanggan"
         >
           <Input onChange={onValueChange} name="phone" value={phone}  />
         </Form.Item>
         <Form.Item
-          label="bio"
+          label="Catatan"
         >
-          <TextArea onChange={onValueChange} name="bio" value={bio}  />
+          <TextArea onChange={onValueChange} name="catatan" value={catatan}  />
         </Form.Item>
         <Form.Item
           wrapperCol={{

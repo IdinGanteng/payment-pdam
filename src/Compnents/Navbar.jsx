@@ -19,9 +19,9 @@ const Navbar = () => {
     return (
         <AppBar className={classes.header} position="static">
             <Toolbar >
-                <NavLink to="/" className={classes.spacing}> React JS Crud</NavLink>
-                <NavLink to="all" className={classes.spacing}> All Users</NavLink>
-                <NavLink to="add" className={classes.spacing}> Add Users</NavLink>
+                <NavLink to="/" className={classes.spacing}>PDAM PAYMENT</NavLink>
+                <NavLink to="all" className={classes.spacing}>Data Pelanggan</NavLink>
+                <NavLink to="add" className={classes.spacing}>Pembayaran</NavLink>
             </Toolbar>
         </AppBar>
     )
