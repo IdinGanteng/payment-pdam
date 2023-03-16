@@ -96,7 +96,7 @@ const AddUser = () => {
           }}
         >
           <Button type="primary" onClick={() => addUserDetails()} >
-            Submit
+            Bayar sekarang
           </Button>
           {/* <Button type="primary" onClick={()=> pesanWAotomatis()}>
         send wa
